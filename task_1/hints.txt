@@ -1,0 +1,25 @@
+NP tezka uloha
+exponenciální složitost
+budeme generovat vsechny mozne kombinace
+
+mame graf a ten chceme rozpadnout na dve mnoziny uzlu, tak aby prvni mela (a) uzlu a druha (n-a) no a zaroven chceme minimalizovat pocty dpropojících hran
+
+budeme pouzivat BFS a taky DFS
+
+master = vygeneruje pomoci BFS nejakou hloubku ulohy
+slave = vyresi zbytek pomoci DFS
+
+udelame to tak, že stavů ve frontě bude podstatně víc, než CPU - tzv. vygenerovat si dost hluboký problém
+
+rekurzi budeme implementovat na explicitnim zasobniku
+
+nebudeme moc prorezavat - musim vygenerovat vsechno
+
+prvne OpenMP a pak MPI
+
+
+prikaz qssh - hodi me to na vypocetni uzel
+
+
+stavu v bfs alespon 10 * pocet CPU
+
